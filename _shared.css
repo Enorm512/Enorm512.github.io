@@ -1,0 +1,49 @@
+/* Palette taken from the game's four stage hues, not invented for the site. */
+:root{
+  --ink:#05070f;
+  --ink-2:#0a0e1a;
+  --fog:#8494b0;
+  --text:#e6ecf7;
+  --cyan:#38d9f0;
+  --violet:#a06bf5;
+  --magenta:#f050a0;
+  --amber:#f0b429;
+  --rail:rgba(56,217,240,.34);
+  --measure:38rem;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ink);color:var(--text);
+  font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+/* The tunnel the game is played inside, used here as the page frame. */
+.rail{height:1px;background:var(--rail);position:relative}
+.rail::after{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(90deg,
+    rgba(230,240,255,.5) 0 26px, transparent 26px 60px);
+  opacity:.5;
+}
+.stagerail{
+  height:2px;
+  background:linear-gradient(90deg,
+    var(--cyan) 0%, var(--cyan) 22%,
+    var(--violet) 34%, var(--violet) 48%,
+    var(--magenta) 60%, var(--magenta) 74%,
+    var(--amber) 88%, var(--amber) 100%);
+}
+main{max-width:var(--measure);margin:0 auto;padding:0 1.4rem}
+h1,h2,h3{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:700;line-height:1.15}
+p{margin:0 0 1.15rem;color:#c3cee2}
+a{color:var(--cyan);text-decoration:none;border-bottom:1px solid rgba(56,217,240,.35)}
+a:hover,a:focus-visible{border-bottom-color:var(--cyan)}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.dim{color:var(--fog)}
+footer{padding:3rem 0 4rem;color:#5f6d88;font-size:.86rem}
+footer a{color:#7f8ea8;border-bottom-color:rgba(127,142,168,.3)}
+@media (prefers-reduced-motion:no-preference){
+  .fade{animation:rise .7s cubic-bezier(.2,.7,.3,1) both}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+}

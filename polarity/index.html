@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Polarity — Normann Games</title>
+<meta name="description" content="One tap flips gravity. Thread the neon tunnel. A one-thumb arcade game for Android.">
+<link rel="icon" href="../img/icon.png">
+<meta property="og:title" content="Polarity">
+<meta property="og:description" content="One tap flips gravity. Thread the neon tunnel.">
+<meta property="og:image" content="https://enorm512.github.io/img/share-card.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_shared.css">
+<style>
+  .back{display:inline-block;margin:1.6rem 0 0;font-size:.88rem;color:#7f8ea8;border-bottom-color:rgba(127,142,168,.3)}
+  .hero{padding:3rem 0 2.6rem}
+  .mark{
+    font-family:"Space Grotesk",sans-serif;font-weight:700;
+    font-size:clamp(2.2rem,9vw,3.4rem);letter-spacing:.26em;
+    margin:0 0 .5rem;
+  }
+  .sub{color:var(--fog);letter-spacing:.13em;font-size:.95rem;margin-bottom:2rem}
+  .hero p{font-size:1.08rem}
+
+  /* The four stages, shown in the order you meet them. The colour change is
+     the game's core idea, so the sequence carries the page. */
+  .stages{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin:2.2rem 0 .8rem}
+  .stages figure{margin:0}
+  .stages img{width:100%;border-radius:7px;display:block;border:1px solid rgba(230,240,255,.09)}
+  .stages figcaption{font-size:.74rem;margin-top:.5rem;color:var(--fog);letter-spacing:.04em}
+  .s1{color:var(--cyan)} .s2{color:var(--violet)}
+  .s3{color:var(--magenta)} .s4{color:var(--amber)}
+
+  h2{font-size:1.25rem;letter-spacing:.1em;margin:2.6rem 0 .7rem}
+  .facts{margin:0;padding:0;list-style:none}
+  .facts li{
+    padding:.85rem 0;border-bottom:1px solid rgba(230,240,255,.07);
+    display:flex;gap:1rem;align-items:baseline;
+  }
+  .facts b{
+    font-family:"Space Grotesk",sans-serif;font-weight:500;
+    color:var(--text);flex:0 0 7.5rem;font-size:.92rem;
+  }
+  .facts span{color:#c3cee2;font-size:.95rem}
+
+  .patterns{
+    font-family:"Space Grotesk",sans-serif;font-weight:500;
+    color:var(--fog);line-height:2.1;letter-spacing:.08em;font-size:.9rem;
+  }
+  .patterns em{font-style:normal;color:var(--text)}
+
+  .card{margin:2rem 0;max-width:19rem}
+  .card img{width:100%;border-radius:9px;display:block;border:1px solid rgba(230,240,255,.09)}
+  .caption{font-size:.85rem;color:var(--fog);margin-top:.7rem}
+
+  .cta{padding:2.4rem 0 1rem}
+  .soon{
+    display:inline-block;padding:.75rem 1.3rem;border-radius:8px;
+    border:1px dashed rgba(230,240,255,.22);color:var(--fog);
+    font-family:"Space Grotesk",sans-serif;letter-spacing:.06em;font-size:.92rem;
+  }
+
+  /* On a narrow screen a 7.5rem label leaves a column too thin to read. */
+  @media (max-width:30rem){
+    .facts li{display:block}
+    .facts b{display:block;margin-bottom:.15rem}
+    .stages{gap:.4rem}
+    .stages figcaption{font-size:.66rem}
+  }
+</style>
+</head><body>
+
+<div class="stagerail"></div>
+
+<main>
+  <a class="back" href="../">Normann Games</a>
+
+  <header class="hero fade">
+    <h1 class="mark">POLARITY</h1>
+    <div class="sub">One tap. Flip gravity.</div>
+    <p>Tap and gravity reverses. That is the whole control scheme. Everything
+      else is the tunnel getting faster and the gaps getting smaller, until you
+      find out where your limit is.</p>
+  </header>
+
+  <section class="stages">
+    <figure>
+      <img src="../img/stage-cyan.png" alt="Cyan stage">
+      <figcaption class="s1">Cyan — patient</figcaption>
+    </figure>
+    <figure>
+      <img src="../img/stage-violet.png" alt="Violet stage">
+      <figcaption class="s2">Violet — quicker</figcaption>
+    </figure>
+    <figure>
+      <img src="../img/stage-magenta.png" alt="Magenta stage">
+      <figcaption class="s3">Magenta — tighter</figcaption>
+    </figure>
+    <figure>
+      <img src="../img/stage-amber.png" alt="Amber stage">
+      <figcaption class="s4">Amber — unforgiving</figcaption>
+    </figure>
+  </section>
+
+  <h2>Built to be fair</h2>
+  <p>Every obstacle is placed against the real physics of the orb. If a gap is
+    on screen, it can be reached — there are no arrangements you could not have
+    survived. When you lose, it was you.</p>
+
+  <h2>Ten patterns, each with a name</h2>
+  <p class="patterns">
+    <em>The Ladder</em> · <em>The Pinch</em> · <em>The Zipper</em> ·
+    <em>The Switchback</em> · <em>The Needle</em> · <em>The Comb</em> ·
+    <em>The Cascade</em> · <em>The Gauntlet</em> · <em>The Anvil</em> ·
+    <em>The Spire</em>
+  </p>
+  <p>Hand-built sequences that appear at fixed scores. The Needle arrives at 72
+    and is the tightest opening in the game.</p>
+
+  <h2>What else is in there</h2>
+  <ul class="facts">
+    <li><b>Soundtrack</b><span>Four tracks, one per stage, crossfaded on a bar line. Obstacles arrive on the beat.</span></li>
+    <li><b>Two boards</b><span>Runs where you took a revive score separately, so a clean best means exactly that.</span></li>
+    <li><b>Shards</b><span>Earned by playing, spent on orb skins or single-run consumables.</span></li>
+    <li><b>Every day</b><span>Three rotating challenges and a daily bonus.</span></li>
+    <li><b>Comfort</b><span>High contrast mode, reduced flashing, independent music and effects.</span></li>
+    <li><b>No account</b><span>Progress stays on your device. Nothing is uploaded.</span></li>
+  </ul>
+
+  <h2>Share a run</h2>
+  <div class="card">
+    <img src="../img/share-card.png" alt="A shared score card showing 121 gates passed and a platinum medal">
+    <p class="caption">Beat your best and the game draws a card in the colour of
+      the stage you died in.</p>
+  </div>
+
+  <section class="cta">
+    <span class="soon">Coming to Google Play</span>
+  </section>
+</main>
+
+<div class="rail"></div>
+
+<main>
+  <footer>
+    <p>Normann Games, Verdal, Norway<br>
+      <a href="mailto:Normann_games@proton.me">Normann_games@proton.me</a></p>
+    <p><a href="../privacy-policy.html">Privacy policy</a></p>
+  </footer>
+</main>
+
+</body></html>

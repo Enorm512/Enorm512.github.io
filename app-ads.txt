@@ -1,0 +1,7 @@
+# app-ads.txt - authorises AdMob to sell ad inventory in Polarity.
+# Mandatory for new AdMob apps since January 2025.
+#
+# TODO: replace pub-0000000000000000 with your real AdMob publisher ID
+# (AdMob -> Settings -> Account information -> Publisher ID).
+#
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

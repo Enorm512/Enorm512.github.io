@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="no"><head>
+<html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bli testleser for Polarity</title>
+<title>Become a Polarity tester</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="../img/icon.png">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../_shared.css">
 <style>
   main{padding-bottom:3rem}
+  .langbar{display:flex;justify-content:flex-end;gap:.4rem;padding-top:1.4rem}
+  .langbar button{background:none;border:1px solid rgba(230,240,255,.18);color:var(--fog);
+    font-family:"Space Grotesk",sans-serif;font-weight:500;font-size:.78rem;
+    letter-spacing:.09em;padding:.36rem .72rem;border-radius:7px;cursor:pointer}
+  .langbar button[aria-pressed="true"]{border-color:var(--cyan);color:var(--cyan);background:rgba(56,217,240,.1)}
   .mark{font-family:"Space Grotesk",sans-serif;font-weight:700;
-    font-size:clamp(1.8rem,7vw,2.4rem);letter-spacing:.24em;margin:2.6rem 0 .3rem}
+    font-size:clamp(1.8rem,7vw,2.4rem);letter-spacing:.24em;margin:1.6rem 0 .3rem}
   .sub{color:var(--fog);letter-spacing:.13em;font-size:.85rem;margin-bottom:2.4rem}
   ol{list-style:none;counter-reset:s;padding:0;margin:0}
   ol li{counter-increment:s;position:relative;padding:0 0 1.9rem 3.2rem;
@@ -18,73 +23,118 @@
   ol li:last-child{border-left-color:transparent}
   ol li::before{content:counter(s);position:absolute;left:-1rem;top:-.15rem;
     width:2rem;height:2rem;border-radius:50%;background:var(--ink-2);
-    border:1px solid var(--cyan);color:var(--cyan);
-    display:flex;align-items:center;justify-content:center;
-    font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:.9rem}
+    border:1px solid var(--cyan);color:var(--cyan);display:flex;align-items:center;
+    justify-content:center;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:.9rem}
   ol h2{font-size:1.05rem;letter-spacing:.06em;margin:0 0 .4rem}
   ol p{margin:0 0 .8rem;font-size:.95rem}
   .btn{display:inline-block;padding:.7rem 1.2rem;border-radius:9px;
     border:1px solid var(--cyan);font-family:"Space Grotesk",sans-serif;
     font-weight:500;letter-spacing:.05em;font-size:.95rem}
-  .warn{background:rgba(240,180,41,.08);border:1px solid rgba(240,180,41,.3);
+  .warn{background:#2a2110;border:1px solid rgba(240,180,41,.55);
     border-radius:10px;padding:1rem 1.1rem;margin:.6rem 0 0}
-  .warn p{margin:0;font-size:.9rem;color:#e8d9b0}
+  .warn p{margin:0;font-size:.95rem;color:#fdf6e6;line-height:1.55}
+  .warn strong{color:#ffc94a}
   .ask{border-top:1px solid rgba(230,240,255,.1);margin-top:1rem;padding-top:2rem}
   .ask h2{font-size:1.1rem;letter-spacing:.08em;margin:0 0 .8rem}
   .ask ul{padding-left:1.1rem;margin:0 0 1.2rem}
   .ask li{margin-bottom:.5rem;color:#c3cee2;font-size:.95rem}
+  [data-lang]{display:none}
+  [data-lang].on{display:block}
 </style>
 </head><body>
 <div class="stagerail"></div>
 <main>
+  <div class="langbar">
+    <button id="b-en" aria-pressed="true" onclick="setLang('en')">EN</button>
+    <button id="b-no" aria-pressed="false" onclick="setLang('no')">NO</button>
+  </div>
   <h1 class="mark">POLARITY</h1>
-  <div class="sub">Bli testleser &middot; tar tre minutter</div>
-  <p>Takk for at du vil teste spillet. Du trenger en Android-telefon. Det er to
-     steg, og begge m&aring; gj&oslash;res med <strong>samme Google-konto som du
-     bruker i Play Butikk p&aring; telefonen</strong>.</p>
-  <ol>
-    <li>
-      <h2>Bli med i testgruppa</h2>
-      <p>Trykk her og velg &laquo;Join group&raquo;.</p>
-      <a class="btn" href="https://groups.google.com/g/polarity-testers">Bli med i gruppa</a>
-    </li>
-    <li>
-      <h2>Godta testinvitasjonen</h2>
-      <p>Trykk her og velg &laquo;Become a tester&raquo;. Deretter f&aring;r du
-         en lenke videre til Play Butikk.</p>
-      <a class="btn" href="https://play.google.com/apps/testing/no.verdal.polarity">Godta invitasjonen</a>
-    </li>
-    <li>
-      <h2>Installer og spill</h2>
-      <p>Installer fra Play Butikk som en vanlig app.</p>
-      <div class="warn">
-        <p><strong>Det viktigste:</strong> ikke avinstaller spillet f&oslash;r
-           testperioden er over. Du trenger ikke spille hver dag &mdash; noen
-           runder i l&oslash;pet av de to ukene holder fint.</p>
-      </div>
-    </li>
-  </ol>
-  <section class="ask">
-    <h2>Hva jeg lurer p&aring;</h2>
-    <ul>
-      <li>Skj&oslash;nner du hva du skal gj&oslash;re uten forklaring?</li>
-      <li>N&aring;r fargen skifter fra bl&aring;tt til lilla &mdash; kjennes det
-          som et naturlig hopp, eller som en vegg?</li>
-      <li>Fant du butikken? Ga den mening?</li>
-      <li>Er det noe som f&oslash;les urettferdig?</li>
-      <li>Spilte du mer enn &eacute;n gang? Hvorfor / hvorfor ikke?</li>
-    </ul>
-    <p>Send meg en melding, eller
-       <a href="mailto:Normann_games@proton.me">Normann_games@proton.me</a>.
-       Kritikk er mer nyttig enn ros.</p>
-  </section>
+
+  <div data-lang="en" class="on">
+    <div class="sub">Become a tester &middot; takes three minutes</div>
+    <p>Thanks for helping test the game. You need an Android phone. There are two
+       steps, and both must use <strong>the same Google account you are signed
+       into the Play Store with on that phone</strong>.</p>
+    <ol>
+      <li><h2>Join the testing group</h2>
+        <p>Tap here and choose &ldquo;Join group&rdquo;.</p>
+        <a class="btn" href="https://groups.google.com/g/polarity-testers">Join the group</a></li>
+      <li><h2>Accept the test invitation</h2>
+        <p>Tap here and choose &ldquo;Become a tester&rdquo;. You will then get a link through to the Play Store.</p>
+        <a class="btn" href="https://play.google.com/apps/testing/no.verdal.polarity">Accept the invitation</a></li>
+      <li><h2>Install and play</h2>
+        <p>Install from the Play Store like any other app.</p>
+        <div class="warn"><p><strong>The important part:</strong> don't uninstall the game
+          before the test period ends. You don't need to play every day &mdash; a few
+          rounds across the two weeks is plenty.</p></div></li>
+    </ol>
+    <section class="ask">
+      <h2>What I'd like to know</h2>
+      <ul>
+        <li>Do you understand what to do without being told?</li>
+        <li>When the colour changes from blue to purple &mdash; does that feel like a natural step up, or like a wall?</li>
+        <li>Did you find the shop? Did it make sense?</li>
+        <li>Is anything unfair?</li>
+        <li>Did you play more than once? Why, or why not?</li>
+      </ul>
+      <p>Message me, or <a href="mailto:Normann_games@proton.me">Normann_games@proton.me</a>.
+         Criticism is more useful than praise.</p>
+    </section>
+  </div>
+
+  <div data-lang="no">
+    <div class="sub">Bli testleser &middot; tar tre minutter</div>
+    <p>Takk for at du vil teste spillet. Du trenger en Android-telefon. Det er to
+       steg, og begge m&aring; gj&oslash;res med <strong>samme Google-konto som du
+       bruker i Play Butikk p&aring; telefonen</strong>.</p>
+    <ol>
+      <li><h2>Bli med i testgruppa</h2>
+        <p>Trykk her og velg &laquo;Join group&raquo;.</p>
+        <a class="btn" href="https://groups.google.com/g/polarity-testers">Bli med i gruppa</a></li>
+      <li><h2>Godta testinvitasjonen</h2>
+        <p>Trykk her og velg &laquo;Become a tester&raquo;. Deretter f&aring;r du en lenke videre til Play Butikk.</p>
+        <a class="btn" href="https://play.google.com/apps/testing/no.verdal.polarity">Godta invitasjonen</a></li>
+      <li><h2>Installer og spill</h2>
+        <p>Installer fra Play Butikk som en vanlig app.</p>
+        <div class="warn"><p><strong>Det viktigste:</strong> ikke avinstaller spillet
+          f&oslash;r testperioden er over. Du trenger ikke spille hver dag &mdash; noen
+          runder i l&oslash;pet av de to ukene holder fint.</p></div></li>
+    </ol>
+    <section class="ask">
+      <h2>Hva jeg lurer p&aring;</h2>
+      <ul>
+        <li>Skj&oslash;nner du hva du skal gj&oslash;re uten forklaring?</li>
+        <li>N&aring;r fargen skifter fra bl&aring;tt til lilla &mdash; kjennes det som et naturlig hopp, eller som en vegg?</li>
+        <li>Fant du butikken? Ga den mening?</li>
+        <li>Er det noe som f&oslash;les urettferdig?</li>
+        <li>Spilte du mer enn &eacute;n gang? Hvorfor / hvorfor ikke?</li>
+      </ul>
+      <p>Send meg en melding, eller <a href="mailto:Normann_games@proton.me">Normann_games@proton.me</a>.
+         Kritikk er mer nyttig enn ros.</p>
+    </section>
+  </div>
 </main>
 <div class="rail"></div>
 <main>
-  <footer>
-    <p>Normann Games, Verdal<br>
-      <a href="../">normanngames</a> &middot;
-      <a href="../privacy-policy.html">Personvern</a></p>
-  </footer>
+  <footer><p>Normann Games, Verdal<br>
+    <a href="../">normanngames</a> &middot; <a href="../privacy-policy.html">Privacy</a></p></footer>
 </main>
+<script>
+function setLang(l){
+  document.querySelectorAll("[data-lang]").forEach(function(el){
+    el.classList.toggle("on", el.getAttribute("data-lang") === l);
+  });
+  document.getElementById("b-en").setAttribute("aria-pressed", l === "en");
+  document.getElementById("b-no").setAttribute("aria-pressed", l === "no");
+  document.documentElement.lang = l === "no" ? "no" : "en";
+  try { localStorage.setItem("polLang", l); } catch(e){}
+}
+// Norwegian phones get Norwegian, everyone else English. A manual choice on
+// this device always wins over the detection.
+try {
+  var saved = localStorage.getItem("polLang");
+  if(saved){ setLang(saved); }
+  else if(/^(nb|nn|no)\b/i.test(navigator.language || "")) { setLang("no"); }
+} catch(e){}
+</script>
 </body></html>

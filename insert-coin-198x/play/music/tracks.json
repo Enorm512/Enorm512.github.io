@@ -1,0 +1,79 @@
+{
+ "era0": {
+  "file": "era0.ogg",
+  "mp3": "era0.mp3",
+  "loopStart": 0.0,
+  "loopEnd": 54.758,
+  "gain": 0.832
+ },
+ "era1": {
+  "file": "era1.ogg",
+  "mp3": "era1.mp3",
+  "loopStart": 0.0,
+  "loopEnd": 74.6545,
+  "gain": 0.903
+ },
+ "era2": {
+  "file": "era2.ogg",
+  "mp3": "era2.mp3",
+  "loopStart": 0.0,
+  "loopEnd": 89.6532,
+  "gain": 1.022
+ },
+ "era3": {
+  "file": "era3.ogg",
+  "mp3": "era3.mp3",
+  "loopStart": 0.0,
+  "loopEnd": 151.2743,
+  "gain": 0.89
+ },
+ "era4": {
+  "file": "era4.ogg",
+  "mp3": "era4.mp3",
+  "loopStart": 0.0,
+  "loopEnd": 107.9204,
+  "gain": 1.058
+ },
+ "era5": {
+  "file": "era5.ogg",
+  "mp3": "era5.mp3",
+  "loopStart": 0.0,
+  "loopEnd": 162.9131,
+  "gain": 1.018
+ },
+ "era6": {
+  "file": "era6.ogg",
+  "mp3": "era6.mp3",
+  "loopStart": 0.0,
+  "loopEnd": 119.3441,
+  "gain": 1.076
+ },
+ "era7": {
+  "file": "era7.ogg",
+  "mp3": "era7.mp3",
+  "loopStart": 0.0,
+  "loopEnd": 150.4259,
+  "gain": 0.757
+ },
+ "boss_a": {
+  "file": "boss_a.ogg",
+  "mp3": "boss_a.mp3",
+  "loopStart": 0.0,
+  "loopEnd": 91.1273,
+  "gain": 1.008
+ },
+ "boss_b": {
+  "file": "boss_b.ogg",
+  "mp3": "boss_b.mp3",
+  "loopStart": 0.0,
+  "loopEnd": 140.9504,
+  "gain": 0.977
+ },
+ "title": {
+  "file": "title.ogg",
+  "mp3": "title.mp3",
+  "loopStart": 0.0,
+  "loopEnd": 81.7689,
+  "gain": 0.955
+ }
+}

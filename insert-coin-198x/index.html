@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>INSERT COIN 198X — Normann Games</title>
+<meta name="description" content="A fast arcade shooter that boots as a 1983 cabinet and evolves through forty years of video-game history in one run. Play free in your browser.">
+<link rel="icon" href="../img/icon.png">
+<meta property="og:title" content="INSERT COIN 198X">
+<meta property="og:description" content="Two buttons. Forty years. A playable history of the arcade, free in your browser.">
+<meta property="og:image" content="https://enorm512.github.io/img/ic-share.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../_shared.css">
+<style>
+  .back{display:inline-block;margin:1.6rem 0 0;font-size:.88rem;color:#7f8ea8;border-bottom-color:rgba(127,142,168,.3)}
+  .hero{padding:3rem 0 2.2rem}
+  .mark{
+    font-family:"Space Grotesk",sans-serif;font-weight:700;
+    font-size:clamp(1.9rem,8vw,3.1rem);letter-spacing:.2em;
+    margin:0 0 .5rem;
+  }
+  .sub{color:var(--fog);letter-spacing:.13em;font-size:.95rem;margin-bottom:2rem}
+  .hero p{font-size:1.08rem}
+
+  .play{
+    display:inline-block;padding:.85rem 1.6rem;border-radius:9px;
+    background:var(--cyan);color:var(--ink);border:0;
+    font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.08em;font-size:1rem;
+  }
+  .play:hover{background:#6ae6f7}
+  .playnote{display:block;margin-top:.7rem;font-size:.85rem;color:var(--fog)}
+
+  /* Four of the eight eras, in the order you reach them. The change of hardware is the game. */
+  .eras{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin:2.4rem 0 .8rem}
+  .eras figure{margin:0}
+  .eras img{width:100%;border-radius:7px;display:block;border:1px solid rgba(230,240,255,.09);image-rendering:auto}
+  .eras figcaption{font-size:.74rem;margin-top:.5rem;color:var(--fog);letter-spacing:.04em}
+  .s1{color:var(--cyan)} .s2{color:var(--violet)} .s3{color:var(--magenta)} .s4{color:var(--amber)}
+
+  h2{font-size:1.25rem;letter-spacing:.1em;margin:2.6rem 0 .7rem}
+  .facts{margin:0;padding:0;list-style:none}
+  .facts li{padding:.85rem 0;border-bottom:1px solid rgba(230,240,255,.07);display:flex;gap:1rem;align-items:baseline}
+  .facts b{font-family:"Space Grotesk",sans-serif;font-weight:500;color:var(--text);flex:0 0 7.5rem;font-size:.92rem}
+  .facts span{color:#c3cee2;font-size:.95rem}
+
+  .timeline{font-family:"Space Grotesk",sans-serif;font-weight:500;color:var(--fog);line-height:2.1;letter-spacing:.08em;font-size:.9rem}
+  .timeline em{font-style:normal;color:var(--text)}
+
+  .keys{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:1.2rem 0}
+  .key{border:1px solid rgba(230,240,255,.12);border-radius:8px;padding:.9rem .8rem;text-align:center}
+  .key kbd{
+    display:inline-block;font:500 .8rem "Space Grotesk",sans-serif;letter-spacing:.06em;
+    padding:.25rem .5rem;border-radius:5px;border:1px solid rgba(230,240,255,.25);color:var(--text);margin:.1rem;
+  }
+  .key small{display:block;margin-top:.55rem;color:var(--fog);font-size:.78rem;letter-spacing:.04em}
+
+  .cta{padding:2.4rem 0 1rem}
+
+  @media (max-width:30rem){
+    .facts li{display:block}
+    .facts b{display:block;margin-bottom:.15rem}
+    .eras{gap:.4rem}
+    .eras figcaption{font-size:.66rem}
+    .keys{grid-template-columns:1fr}
+  }
+</style>
+</head><body>
+
+<div class="stagerail"></div>
+
+<main>
+  <a class="back" href="../">Normann Games</a>
+
+  <header class="hero fade">
+    <h1 class="mark">INSERT COIN 198X</h1>
+    <div class="sub">Two buttons. Forty years.</div>
+    <p>It starts as a forgotten 1983 cabinet: two colours, a black sky, a ship
+      that moves left and right and shoots. Then the hardware upgrades while you
+      are still playing, and keeps upgrading, through 8-bit, 16-bit, early 3D,
+      neon bullet hell and beyond. The controls never change. Everything else does.</p>
+    <a class="play" href="play/">Play in your browser</a>
+    <span class="playnote">Free. No download, no account. Desktop keyboard or gamepad; touch works too.</span>
+  </header>
+
+  <section class="eras">
+    <figure>
+      <img src="../img/ic-1983.png" alt="1983: two-colour pixel aliens in formation over a black starfield">
+      <figcaption class="s1">1983 — classic arcade</figcaption>
+    </figure>
+    <figure>
+      <img src="../img/ic-1997.png" alt="1997: flat-shaded polygon ships inside a wireframe 3D tunnel">
+      <figcaption class="s2">1997 — early 3D</figcaption>
+    </figure>
+    <figure>
+      <img src="../img/ic-2015.png" alt="2015: neon-outlined enemies over a synthwave sun and grid">
+      <figcaption class="s3">2015 — neon bullet hell</figcaption>
+    </figure>
+    <figure>
+      <img src="../img/ic-20xx.png" alt="20XX: holographic enemies over a warping cyan grid">
+      <figcaption class="s4">20XX — unknown hardware</figcaption>
+    </figure>
+  </section>
+
+  <h2>A playable history of the arcade</h2>
+  <p class="timeline">
+    <em>1983</em> · <em>1988</em> · <em>1992</em> · <em>1997</em> ·
+    <em>2005</em> · <em>2015</em> · <em>2025</em> · <em>20XX</em>
+  </p>
+  <p>Eight generations, each with its own look, its own soundtrack and its own
+    boss. The same small red alien you meet in the first wave comes back later
+    as a glowing interceptor, because the whole universe evolves with the machine.
+    Beat the final boss and the cabinet reboots into a second, faster loop.</p>
+
+  <h2>Controls</h2>
+  <div class="keys">
+    <div class="key"><kbd>←</kbd><kbd>→</kbd> <small>move</small></div>
+    <div class="key"><kbd>SPACE</kbd> <small>fire</small></div>
+    <div class="key"><kbd>SHIFT</kbd> <small>overdrive: clears every bullet</small></div>
+  </div>
+  <p>That is all of it. A player who understands the game in the first ten
+    seconds still understands it in the final stage. The difficulty comes from
+    the enemies, the bosses and the scoring, never from the buttons.</p>
+
+  <h2>Chase the score</h2>
+  <ul class="facts">
+    <li><b>Chains</b><span>Kill quickly to raise a multiplier up to ×100. The cap grows with each era.</span></li>
+    <li><b>Grazing</b><span>Let shots brush past the ship for points and extra chain time.</span></li>
+    <li><b>Eight bosses</b><span>A claw-armed alien, a serpent, a rotating station, a carrier with destructible hangars, a hive, a boss that studies how you play, and one that shifts between graphics generations mid-fight.</span></li>
+    <li><b>Power-ups</b><span>Dual cannon, spread, laser, missiles, shield and a drone companion from 1992 onward.</span></li>
+    <li><b>Soundtrack</b><span>One theme, re-orchestrated for every era: beeps, chiptune, FM, synthwave, glitch.</span></li>
+    <li><b>Hi-score table</b><span>Three-letter initials, stored in your browser. Nothing is uploaded.</span></li>
+  </ul>
+
+  <section class="cta">
+    <a class="play" href="play/">Insert coin</a>
+  </section>
+</main>
+
+<div class="rail"></div>
+
+<main>
+  <footer>
+    <p>Normann Games, Verdal, Norway<br>
+      <a href="mailto:Normann_games@proton.me">Normann_games@proton.me</a></p>
+    <p><a href="../privacy-policy.html">Privacy policy</a></p>
+  </footer>
+</main>
+
+</body></html>

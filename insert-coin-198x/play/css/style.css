@@ -1,0 +1,20 @@
+html, body {
+  margin: 0; padding: 0; background: #000; color: #888; height: 100%; overflow: hidden;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif; -webkit-user-select: none; user-select: none;
+  touch-action: none; overscroll-behavior: none;
+}
+#cabinet {
+  position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(ellipse at center, #0a0a12 0%, #000 70%);
+}
+#game {
+  display: block; background: #000; image-rendering: pixelated; image-rendering: crisp-edges;
+  box-shadow: 0 0 40px rgba(40, 60, 120, 0.25), 0 0 2px #223;
+  touch-action: none; cursor: crosshair;
+}
+#help {
+  position: fixed; left: 0; right: 0; bottom: 6px; text-align: center; font-size: 11px; letter-spacing: 0.5px; color: #555;
+  pointer-events: none;
+}
+#help b { color: #777; }
+@media (max-height: 500px), (max-width: 600px) { #help { display: none; } }
